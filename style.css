@@ -69,47 +69,6 @@ h2 { font: bold 21px var(--serif); text-transform: uppercase; letter-spacing: 0.
 #publications p { margin: 0 0 18px; }
 
 .footer { border-top: 1px solid var(--line); padding: 18px 24px 32px; font-size: 14px; color: #666; }
-.privacy { margin-top: 8px; max-width: 66ch; }
-.privacy summary { color: var(--accent); cursor: pointer; }
-.privacy p { margin: 8px 0; }
-
-.analytics-prompt {
-  position: fixed;
-  z-index: 20;
-  right: 16px;
-  bottom: 16px;
-  width: min(350px, calc(100% - 32px));
-  padding: 14px 16px 16px;
-  border: 1px solid var(--bar-line);
-  border-radius: 6px;
-  background: var(--bg);
-  box-shadow: 0 4px 20px rgb(31 53 51 / 12%);
-  font-size: 15px;
-}
-.analytics-prompt h2 {
-  margin: 0;
-  color: var(--accent);
-  font: bold 20px var(--serif);
-  letter-spacing: normal;
-  text-transform: none;
-}
-.analytics-prompt p { margin: 6px 0 12px; }
-.analytics-actions { display: flex; flex-wrap: wrap; gap: 8px; }
-.analytics-actions button, .privacy button {
-  border: 1px solid var(--accent);
-  border-radius: 4px;
-  padding: 5px 12px;
-  background: transparent;
-  color: var(--accent);
-  font: inherit;
-  font-weight: 600;
-  cursor: pointer;
-}
-.analytics-actions button:hover, .privacy button:hover { background: var(--bar); }
-.analytics-actions button:focus-visible, .privacy button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
 
 /* Phones */
 @media (max-width: 700px) {
