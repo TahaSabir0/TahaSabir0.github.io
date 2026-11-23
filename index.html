@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="analytics.js"></script>
 </head>
 <body>
   <header class="topbar">
@@ -77,6 +78,25 @@
     </section>
   </main>
 
-  <footer class="wrap footer">© 2026 Taha Sabir</footer>
+  <footer class="wrap footer">
+    © 2026 Taha Sabir
+    <details class="privacy">
+      <summary>Privacy and analytics</summary>
+      <p>If you allow analytics, Google Analytics uses cookies to measure visits, engagement,
+        traffic sources, approximate location, and CV download clicks. This helps me understand how
+        people use the site. Your browser saves your analytics choice. You can change it here at any time.</p>
+      <p><a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites that use its services</a></p>
+      <button type="button" id="analytics-settings" hidden>Change analytics preference</button>
+    </details>
+  </footer>
+
+  <aside class="analytics-prompt" id="analytics-prompt" aria-labelledby="analytics-title" hidden>
+    <h2 id="analytics-title">Analytics cookies</h2>
+    <p>Allow Google Analytics to measure visits and CV download clicks?</p>
+    <div class="analytics-actions">
+      <button type="button" id="analytics-decline">Decline</button>
+      <button type="button" id="analytics-allow">Allow analytics</button>
+    </div>
+  </aside>
 </body>
 </html>
