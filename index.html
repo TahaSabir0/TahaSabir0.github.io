@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Taha Sabir</title>
-  <meta name="description" content="Taha Sabir: undergraduate researcher in medical vision-language models. Seeking a Fall 2027 PhD position in medical image analysis.">
+  <meta name="description" content="Taha Sabir: undergraduate researcher in vision-language models and multimodal learning. Seeking a Fall 2027 PhD position in computer vision and multimodal learning, especially for medical imaging.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
@@ -40,8 +40,8 @@
       <div>
         <h1>Taha Sabir</h1>
         <p class="affil">Gettysburg College · MBZUAI</p>
-        <p class="seeking">Looking for a Fall 2027 PhD position in medical image analysis.</p>
-        <p>Hi, I am an undergraduate studying Computer Science and Mathematics at Gettysburg College. I am also a research assistant in the BioMedIA Lab at MBZUAI, working with Mohammad Yaqub and Tausifa Jan Saleem. I work on vision-language models for medical imaging. My main question is whether unrelated imaging modalities, like X-ray, ultrasound, dental scans and microscopy, can strengthen each other inside one foundation model, and when each one is better off specializing.</p>
+        <p class="seeking">Looking for a Fall 2027 PhD position in computer vision and multimodal learning, especially for medical imaging.</p>
+        <p>Hi, I am an undergraduate studying Computer Science and Mathematics at Gettysburg College. I am also a research assistant in the BioMedIA Lab at MBZUAI, working with Mohammad Yaqub and Tausifa Jan Saleem. I work on vision-language models, especially for medical imaging. My main question is when one model trained on very different kinds of images gets better by sharing what it learns, and when each domain is better off specializing. Medical imaging is where this question matters most to me: X-ray, ultrasound, dental scans and microscopy look nothing alike, yet we want one foundation model that handles them all.</p>
         <details class="more">
           <summary><span class="open-label">More &gt;</span><span class="close-label">Less &lt;</span></summary>
           <p>Away from research, I play rugby (almost four years now) and have gotten hooked on chess. I grew up on a farm and still love being outdoors, and I have three dogs, two cats and 75 chickens! I've been making music for over ten years playing guitar, bass, piano and drums, and producing my own tracks. I also like bringing old electronics back to life, and I vlog my trips and life as an international student in the US.</p>
@@ -55,8 +55,10 @@
 
     <section id="research">
       <h2>Research</h2>
-      <p>My current research looks at how one vision-language model can handle many kinds of medical images at once. At MBZUAI, I led our team to first place in MICCAI FLARE 2026 Task 3, where we adapted a Qwen3.5-9B model with LoRA adapters for diagnosis, detection, counting and report generation. I now lead a four-student follow-up study comparing one shared adapter with task-specific adapters, and my undergraduate thesis maps how much different modalities help each other.</p>
-      <p>Before that, I took part in MBZUAI's UGRIP program in June 2026, where our project won Best Project. On my own, I'm now testing whether decision models, which output calibrated probabilities over a fixed set of answers instead of generating text, work on medical images. So far they have only been tried on text in medicine. Across 10 imaging datasets, their zero-shot lead mostly disappears after fine-tuning, but early results look promising for multi-label diagnosis. I'm also co-building a fault-tolerant distributed training system that syncs PyTorch training across three lab machines and recovers when a worker fails. Outside research, I interned at <a href="https://odysser.com">Odysser</a>, an AI video editor, where I built a streaming video frame decoder and a pipeline to evaluate depth-estimation models for 3D video effects.</p>
+      <p class="interests">Vision-language models · multi-task and multi-domain learning · parameter-efficient fine-tuning · calibrated prediction · efficient training systems</p>
+      <p>My research asks how a single vision-language model can learn many different visual tasks and domains at once: when does sharing parameters help, and when does it cause interference? I focus on medical imaging, where the modalities differ a lot from one another. At MBZUAI, I led our team to first place in MICCAI FLARE 2026 Task 3, where we adapted a Qwen3.5-9B model with task-specific LoRA adapters for diagnosis, detection, counting and report generation. I now lead a four-student follow-up study comparing one shared adapter with task-specific adapters, and my undergraduate thesis maps how much different modalities help or hurt each other when they're trained together.</p>
+      <p>I'm also interested in how VLMs should make predictions. On my own, I'm testing decision models, which output calibrated probabilities over a fixed set of answers instead of generating free text, across 10 medical imaging datasets. In medicine they've so far only been tried on text. Their zero-shot lead mostly disappears after fine-tuning, but early results look promising for multi-label diagnosis. Before this, I took part in MBZUAI's UGRIP program in June 2026, where our project won Best Project.</p>
+      <p>On the systems side, I'm co-building a fault-tolerant distributed training system that syncs PyTorch training across three lab machines and recovers when a worker fails. I've also done applied vision work at <a href="https://odysser.com">Odysser</a>, an AI video editor, where I built a streaming video frame decoder and a pipeline to evaluate depth-estimation models for 3D video effects.</p>
     </section>
 
     <section id="publications">
